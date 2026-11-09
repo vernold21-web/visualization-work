@@ -1,0 +1,20 @@
+TABLEAU CALCULATED FIELDS
+Use all June-November 2026 rows for the graduate worksheet.
+These names use the renamed Tableau fields Attendance, Capacity, Month, and Neighborhood.
+
+Monthly Utilization
+[Attendance] / [Capacity]
+
+Average Monthly Utilization
+AVG([Monthly Utilization])
+
+Weighted Observed Utilization
+SUM([Attendance])
+/
+SUM(IF NOT ISNULL([Attendance]) THEN [Capacity] END)
+
+Month Coverage
+STR(COUNT([Attendance])) + " / " + STR(COUNT([Month]))
+
+Format both aggregate utilization fields as Percentage, 2 decimal places.
+Keep missing attendance null. There is one row per neighborhood per month in this CSV.

@@ -1,0 +1,766 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20263.26.1022.1645                               -->
+<workbook _.fcp.WorkbookFingerprinting.true...author-id='8bc5424b9b47d1c26d1d55c64f3b12825da28f3152daac31fbac36dfb7fba9e3' _.fcp.WorkbookFingerprinting.true...creator-author-id='8bc5424b9b47d1c26d1d55c64f3b12825da28f3152daac31fbac36dfb7fba9e3' _.fcp.WorkbookFingerprinting.true...creator-license-type='public' _.fcp.WorkbookFingerprinting.true...creator-machine-id='8bc5424b9b47d1c26d1d55c64f3b12825da28f3152daac31fbac36dfb7fba9e3' _.fcp.WorkbookFingerprinting.true...license-type='public' _.fcp.WorkbookFingerprinting.true...machine-id='8bc5424b9b47d1c26d1d55c64f3b12825da28f3152daac31fbac36dfb7fba9e3' original-version='18.1' source-build='2026.3.0 (20263.26.1022.1645)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <_.fcp.WorkbookFingerprinting.true...WorkbookFingerprinting />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='tableau_workshops_tidy' inline='true' name='federated.07116m21wnv8km1a1nwhu0lyipgu' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='tableau_workshops_tidy' name='textscan.117apn40apjw4f13k91d80y2bl6l'>
+            <connection class='textscan' directory='C:/Users/memev/Downloads/MOD 2 FILES' filename='tableau_workshops_tidy.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.117apn40apjw4f13k91d80y2bl6l' name='tableau_workshops_tidy.csv' table='[tableau_workshops_tidy#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='date' name='month' ordinal='0' />
+            <column datatype='string' name='neighborhood' ordinal='1' />
+            <column datatype='integer' name='capacity_seats' ordinal='2' />
+            <column datatype='real' name='attendance_visits' ordinal='3' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[tableau_workshops_tidy.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>month</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[month]</local-name>
+            <parent-name>[tableau_workshops_tidy.csv]</parent-name>
+            <remote-alias>month</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_workshops_tidy.csv_0130B1B8CED0436290DEA063CECA445B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>neighborhood</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[neighborhood]</local-name>
+            <parent-name>[tableau_workshops_tidy.csv]</parent-name>
+            <remote-alias>neighborhood</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[tableau_workshops_tidy.csv_0130B1B8CED0436290DEA063CECA445B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>capacity_seats</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[capacity_seats]</local-name>
+            <parent-name>[tableau_workshops_tidy.csv]</parent-name>
+            <remote-alias>capacity_seats</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_workshops_tidy.csv_0130B1B8CED0436290DEA063CECA445B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>attendance_visits</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[attendance_visits]</local-name>
+            <parent-name>[tableau_workshops_tidy.csv]</parent-name>
+            <remote-alias>attendance_visits</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_workshops_tidy.csv_0130B1B8CED0436290DEA063CECA445B]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Monthly Utilization' datatype='real' name='[Calculation_2146036762484736]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[attendance_visits] / [capacity_seats]' />
+      </column>
+      <column caption='Average Monthly Utilization' datatype='real' default-format='p0.00%' name='[Calculation_2146036762783745]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='AVG([Calculation_2146036762484736])' />
+      </column>
+      <column caption='Weighted Observed Utilization' datatype='real' default-format='p0.00%' name='[Calculation_2146036762886146]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([attendance_visits])&#13;&#10;/&#13;&#10;SUM(&#13;&#10;    IF NOT ISNULL([attendance_visits])&#13;&#10;    THEN [capacity_seats]&#13;&#10;    END&#13;&#10;)' />
+      </column>
+      <column caption='Month Coverage' datatype='string' name='[Calculation_2146036763000835]' role='measure' type='nominal'>
+        <calculation class='tableau' formula='STR(COUNT([attendance_visits]))&#13;&#10;+ &quot; / &quot;&#13;&#10;+ STR(COUNT([month]))' />
+      </column>
+      <column caption='tableau_workshops_tidy.csv' datatype='table' name='[__tableau_internal_object_id__].[tableau_workshops_tidy.csv_0130B1B8CED0436290DEA063CECA445B]' role='measure' type='quantitative' />
+      <column caption='Attendance' datatype='real' default-format='n#,##0;-#,##0' name='[attendance_visits]' role='measure' type='quantitative' />
+      <column caption='Capacity' datatype='integer' name='[capacity_seats]' role='measure' type='quantitative' />
+      <column caption='Month' datatype='date' name='[month]' role='dimension' type='ordinal' />
+      <column caption='Neighborhood' datatype='string' name='[neighborhood]' role='dimension' type='nominal' />
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/memev/AppData/Local/Temp/TableauTemp/#TableauTemp_1x2zvea02jqpxb1avi34h1bld329.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='11/09/2026 03:35:31 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>month</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[month]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>month</remote-alias>
+              <ordinal>0</ordinal>
+              <family>tableau_workshops_tidy.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tableau_workshops_tidy.csv_0130B1B8CED0436290DEA063CECA445B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>neighborhood</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[neighborhood]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>neighborhood</remote-alias>
+              <ordinal>1</ordinal>
+              <family>tableau_workshops_tidy.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[tableau_workshops_tidy.csv_0130B1B8CED0436290DEA063CECA445B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>capacity_seats</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[capacity_seats]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>capacity_seats</remote-alias>
+              <ordinal>2</ordinal>
+              <family>tableau_workshops_tidy.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tableau_workshops_tidy.csv_0130B1B8CED0436290DEA063CECA445B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>attendance_visits</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[attendance_visits]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>attendance_visits</remote-alias>
+              <ordinal>3</ordinal>
+              <family>tableau_workshops_tidy.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tableau_workshops_tidy.csv_0130B1B8CED0436290DEA063CECA445B]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='tableau_workshops_tidy.csv' id='tableau_workshops_tidy.csv_0130B1B8CED0436290DEA063CECA445B'>
+            <properties context=''>
+              <relation connection='textscan.117apn40apjw4f13k91d80y2bl6l' name='tableau_workshops_tidy.csv' table='[tableau_workshops_tidy#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='date' name='month' ordinal='0' />
+                  <column datatype='string' name='neighborhood' ordinal='1' />
+                  <column datatype='integer' name='capacity_seats' ordinal='2' />
+                  <column datatype='real' name='attendance_visits' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='November Attendance'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#000000' fontname='Benton Sans Book'>Audience: Community-workshop coordinator
+November 2026 attendance ranged from 82 to 94 seat visits</run>
+            <run fontalignment='1'>Æ </run>
+          </formatted-text>
+        </title>
+        <caption>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Simulated data from June 2026 to November 2026, visits are not unique participants. Capacity differs across neighborhoods.
+Source: Simulated community workshop data</run>
+          </formatted-text>
+        </caption>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='tableau_workshops_tidy' name='federated.07116m21wnv8km1a1nwhu0lyipgu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.07116m21wnv8km1a1nwhu0lyipgu'>
+            <column caption='Attendance' datatype='real' default-format='n#,##0;-#,##0' name='[attendance_visits]' role='measure' type='quantitative' />
+            <column caption='Month' datatype='date' name='[month]' role='dimension' type='ordinal' />
+            <column caption='Neighborhood' datatype='string' name='[neighborhood]' role='dimension' type='nominal' />
+            <column-instance column='[month]' derivation='None' name='[none:month:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[neighborhood]' derivation='None' name='[none:neighborhood:nk]' pivot='key' type='nominal' />
+            <column-instance column='[attendance_visits]' derivation='Sum' name='[sum:attendance_visits:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.07116m21wnv8km1a1nwhu0lyipgu].[none:month:qk]' included-values='in-range'>
+            <min>#2026-11-01#</min>
+            <max>#2026-11-30#</max>
+          </filter>
+          <manual-sort column='[federated.07116m21wnv8km1a1nwhu0lyipgu].[none:neighborhood:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;East&quot;</bucket>
+              <bucket>&quot;West&quot;</bucket>
+              <bucket>&quot;North&quot;</bucket>
+              <bucket>&quot;South&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.07116m21wnv8km1a1nwhu0lyipgu].[none:month:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.07116m21wnv8km1a1nwhu0lyipgu].[sum:attendance_visits:qk]' scope='cols' value='Attendance (seat visits)' />
+            <encoding attr='space' class='0' field='[federated.07116m21wnv8km1a1nwhu0lyipgu].[sum:attendance_visits:qk]' field-type='quantitative' max='116.0' min='0.0' range-type='fixed' scope='cols' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#75a1c7' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.07116m21wnv8km1a1nwhu0lyipgu].[none:neighborhood:nk]</rows>
+        <cols>[federated.07116m21wnv8km1a1nwhu0lyipgu].[sum:attendance_visits:qk]</cols>
+      </table>
+      <simple-id uuid='{881AC781-6939-41D0-B89D-A6891C501031}' />
+    </worksheet>
+    <worksheet name='November COPY'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#000000' fontname='Benton Sans Book'>Audience: Community-workshop coordinator
+November 2026 attendance ranged from 82 to 94 seat visits</run>
+            <run fontalignment='1'>Æ </run>
+          </formatted-text>
+        </title>
+        <caption>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Simulated data from June 2026 to November 2026, visits are not unique participants. Capacity differs across neighborhoods.
+Source: Simulated community workshop data</run>
+          </formatted-text>
+        </caption>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='tableau_workshops_tidy' name='federated.07116m21wnv8km1a1nwhu0lyipgu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.07116m21wnv8km1a1nwhu0lyipgu'>
+            <column caption='Attendance' datatype='real' default-format='n#,##0;-#,##0' name='[attendance_visits]' role='measure' type='quantitative' />
+            <column caption='Month' datatype='date' name='[month]' role='dimension' type='ordinal' />
+            <column caption='Neighborhood' datatype='string' name='[neighborhood]' role='dimension' type='nominal' />
+            <column-instance column='[month]' derivation='None' name='[none:month:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[neighborhood]' derivation='None' name='[none:neighborhood:nk]' pivot='key' type='nominal' />
+            <column-instance column='[attendance_visits]' derivation='Sum' name='[sum:attendance_visits:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.07116m21wnv8km1a1nwhu0lyipgu].[none:month:qk]' included-values='in-range'>
+            <min>#2026-11-01#</min>
+            <max>#2026-11-30#</max>
+          </filter>
+          <manual-sort column='[federated.07116m21wnv8km1a1nwhu0lyipgu].[none:neighborhood:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;East&quot;</bucket>
+              <bucket>&quot;West&quot;</bucket>
+              <bucket>&quot;North&quot;</bucket>
+              <bucket>&quot;South&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.07116m21wnv8km1a1nwhu0lyipgu].[none:month:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+            <encodings>
+              <text column='[federated.07116m21wnv8km1a1nwhu0lyipgu].[sum:attendance_visits:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#75a1c7' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.07116m21wnv8km1a1nwhu0lyipgu].[none:neighborhood:nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{1A8EC86C-3C2E-460F-A5CE-8596527EAF24}' />
+    </worksheet>
+    <worksheet name='Utilization Comparison'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='tableau_workshops_tidy' name='federated.07116m21wnv8km1a1nwhu0lyipgu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.07116m21wnv8km1a1nwhu0lyipgu'>
+            <column caption='Monthly Utilization' datatype='real' name='[Calculation_2146036762484736]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[attendance_visits] / [capacity_seats]' />
+            </column>
+            <column caption='Average Monthly Utilization' datatype='real' default-format='p0.00%' name='[Calculation_2146036762783745]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='AVG([Calculation_2146036762484736])' />
+            </column>
+            <column caption='Weighted Observed Utilization' datatype='real' default-format='p0.00%' name='[Calculation_2146036762886146]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([attendance_visits])&#13;&#10;/&#13;&#10;SUM(&#13;&#10;    IF NOT ISNULL([attendance_visits])&#13;&#10;    THEN [capacity_seats]&#13;&#10;    END&#13;&#10;)' />
+            </column>
+            <column caption='Month Coverage' datatype='string' name='[Calculation_2146036763000835]' role='measure' type='nominal'>
+              <calculation class='tableau' formula='STR(COUNT([attendance_visits]))&#13;&#10;+ &quot; / &quot;&#13;&#10;+ STR(COUNT([month]))' />
+            </column>
+            <column caption='Attendance' datatype='real' default-format='n#,##0;-#,##0' name='[attendance_visits]' role='measure' type='quantitative' />
+            <column caption='Capacity' datatype='integer' name='[capacity_seats]' role='measure' type='quantitative' />
+            <column caption='Month' datatype='date' name='[month]' role='dimension' type='ordinal' />
+            <column caption='Neighborhood' datatype='string' name='[neighborhood]' role='dimension' type='nominal' />
+            <column-instance column='[neighborhood]' derivation='None' name='[none:neighborhood:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_2146036762783745]' derivation='User' name='[usr:Calculation_2146036762783745:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_2146036762886146]' derivation='User' name='[usr:Calculation_2146036762886146:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_2146036763000835]' derivation='User' name='[usr:Calculation_2146036763000835:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.07116m21wnv8km1a1nwhu0lyipgu].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.07116m21wnv8km1a1nwhu0lyipgu].[usr:Calculation_2146036762783745:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.07116m21wnv8km1a1nwhu0lyipgu].[usr:Calculation_2146036762886146:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.07116m21wnv8km1a1nwhu0lyipgu].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='126' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.07116m21wnv8km1a1nwhu0lyipgu].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.07116m21wnv8km1a1nwhu0lyipgu].[none:neighborhood:nk] / [federated.07116m21wnv8km1a1nwhu0lyipgu].[usr:Calculation_2146036763000835:nk])</rows>
+        <cols>[federated.07116m21wnv8km1a1nwhu0lyipgu].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{FB16A8AA-A5A8-496C-98E2-936783504F51}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='November Attendance'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='300'>
+            <card type='caption' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.07116m21wnv8km1a1nwhu0lyipgu].[none:month:qk]</field>
+            <field>[federated.07116m21wnv8km1a1nwhu0lyipgu].[none:neighborhood:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{2260686C-1FB2-4788-8C74-705B69BE1867}' />
+    </window>
+    <window class='worksheet' name='November COPY'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='300'>
+            <card type='caption' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.07116m21wnv8km1a1nwhu0lyipgu].[none:month:qk]</field>
+            <field>[federated.07116m21wnv8km1a1nwhu0lyipgu].[none:neighborhood:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{1DCD8990-102B-42B7-9AEE-3E95B259083D}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Utilization Comparison'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.07116m21wnv8km1a1nwhu0lyipgu].[:Measure Names]</field>
+            <field>[federated.07116m21wnv8km1a1nwhu0lyipgu].[none:neighborhood:nk]</field>
+            <field>[federated.07116m21wnv8km1a1nwhu0lyipgu].[usr:Calculation_2146036763000835:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{285A68D3-323A-4FF8-9000-CF809085032F}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='159' name='November Attendance' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='104' name='November COPY' width='144'>
+      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
+      DrZ+k5Ai1zgAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='124' name='Utilization Comparison' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
